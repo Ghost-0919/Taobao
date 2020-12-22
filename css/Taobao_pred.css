@@ -1,0 +1,131 @@
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+button {
+    outline: none;
+}
+
+i {
+    font-style: normal;
+}
+
+em {
+    font-style: normal;
+    font-size: 12px;
+}
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+.fr {
+    float: right;
+    display: inline;
+}
+
+.f2 {
+    color: #f22e00;
+}
+
+.c4 {
+    color: #ff4400 !important;
+}
+
+.c5 {
+    color: #ff5500;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr7 {
+    margin-right: 7px;
+}
+
+.ml6 {
+    margin-left: 6px;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.pd10 {
+    padding-top: 10px !important;
+}
+
+.long {
+    float: left;
+    font-size: 12px;
+    color: #dddddd;
+    padding: 0 5px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.clearfix::before {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+#Selling_item h3::before {
+    content: "";
+    position: relative;
+    float: left;
+    top: 4px;
+    width: 4px;
+    height: 16px;
+    background: linear-gradient(to bottom, #ff7436, #ff0000);
+    margin-right: 7px;
+}
+
+#link_container .link_inner h3::before {
+    content: "";
+    position: relative;
+    float: left;
+    top: 16px;
+    width: 4px;
+    height: 16px;
+    background: linear-gradient(to bottom, #fad961, #ff9f00);
+    margin-right: 7px;
+}
+
+.bor_topf4 {
+    border-top-color: #f4f4f4 !important;
+}
