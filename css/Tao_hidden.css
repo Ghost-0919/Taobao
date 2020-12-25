@@ -1,0 +1,78 @@
+/* 顶部导航隐藏模块样式 */
+
+#top_nav .dispnone {
+    z-index: 1000;
+    margin-top: -1px;
+    display: none;
+    position: relative;
+}
+
+#top_nav .dispnone .li-style {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    padding: 8px 0;
+    line-height: normal;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    overflow-y: scroll;
+    max-height: 270px;
+}
+
+#top_nav .dispnone .li-style li {
+    float: none !important;
+    width: 242px;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+#top_nav .dispnone .my_taobao,
+#top_nav .dispnone .collect,
+#top_nav .dispnone .qianniu,
+#top_nav .dispnone .service {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    padding: 8px 0;
+    line-height: normal;
+    border: 1px solid #eeeeee;
+    background: #fff;
+}
+
+#top_nav .dispnone .my_taobao a,
+#top_nav .dispnone .collect a,
+#top_nav .dispnone .qianniu a,
+#top_nav .dispnone .service a {
+    display: block;
+    padding: 0 5px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: #6c6c6c;
+    cursor: pointer;
+}
+
+#top_nav .dispnone .qianniu a:hover {
+    background: #f5f5f5;
+}
+
+#top_nav .dispnone .collect a:hover {
+    background: #f5f5f5;
+}
+
+#top_nav .dispnone .my_taobao a:hover {
+    background: #f5f5f5;
+}
+
+#top_nav .dispnone .service a:hover {
+    background: #f5f5f5;
+}
+
+#top_nav .bg_f:hover {
+    background: #fff;
+}
+
+#top_nav .dispnone li:hover {
+    background: #f5f5f5;
+}

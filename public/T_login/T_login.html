@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/T_login.css">
+    <script src="js/T_login.js"></script>
+    <title>淘宝网-淘！ 我喜欢</title>
+</head>
+
+<body>
+    <!-- login 头部 -->
+    <div id="header" class="clearfix">
+        <div class="head-inner">
+            <h1>
+                <a href="../../Taobao.html">
+                    <i class="iconfont">&#xe840;</i>
+                </a>
+            </h1>
+            <a href="#" class="link">
+                <i class="iconfont f40">&#xe505;</i> "登录页面"改进建议
+            </a>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div id="content">
+        <div class="bg-img"></div>
+        <div class="mobile-tb">
+            <a href="#" class="bg-click"></a>
+        </div>
+        <div class="login-box">
+            <div class="login-layout">
+                <div class="login-inner">
+                    <div class="right-angle">
+                        <a href="javascript:QR(this)" class="QR-click"><i class="iconfont QR-code f40" id="QR-code">&#xe633;</i></a>
+                        <div class="login-tip" id="log-tip">
+                            <div class="poptip">
+                                <div class="poptip-arrow">
+                                    <em></em>
+                                    <span></span>
+                                </div>
+                                <div class="poptip-content">扫码登录更安全</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-content2" id="login-cont2">
+                        <div class="QR-inner">
+                            <div class="QR-icon">
+                                <div class="QR-title">手机扫码，安全登录</div>
+                            </div>
+                            <a href="javascript:compu(this)" class="compu"><i class="iconfont f40" id="computer">&#xe65c;</i></a>
+                        </div>
+                        <div class="login-QR">
+                            <div class="QR-iter">
+                                <div class="qrcode-img">
+                                    <a href="#"><img src="img/QR-img.png" alt=""></a>
+                                </div>
+                                <div class="qrcode-error">
+                                    <i class="iconfont f40">&#xe651;</i>
+                                    <p>
+                                        <span>打开</span>
+                                        <a href="#">手机淘宝</a>|<a href="#">手机天猫</a><br>
+                                        <a href="#">扫一扫登陆</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="QR-list">
+                                <a href="javascript:passlogin(this)">密码登陆</a>
+                                <a href="#" id="borbt">免费注册</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-content mt2" id="login-cont1">
+                        <div class="password">
+                            <div class="login-pass">
+                                <a href="javascript:over(this)" class="click1 login-botm1 active">密码登录</a>
+                                <a href="javascript:leave(this)" class="click2 login-botm2">短信登录</a>
+                            </div>
+                        </div>
+                        <form id="login-form">
+                            <div class="fm-filed" id="fm">
+                                <div>
+                                    <label class="icon-filed">
+                                        <i class="iconfont">&#xe609;</i>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="会员名/邮箱/手机号" class="filed-input">
+                                </div>
+                            </div>
+                            <div class="fm-filed2" id="fm2">
+                                <div>
+                                    <label class="icon-filed">
+                                        <i class="iconfont">&#xe614;</i>
+                                    </label>
+                                </div>
+                                <div class="drop-down " data-content="+86">
+                                    <select class="drop-img drop-select"></select>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="请输入手机号" class="filed-input pl110">
+                                </div>
+                            </div>
+                            <div class="fm-filed3" id="fm3">
+                                <div>
+                                    <label class="icon-filed">
+                                        <i class="iconfont">&#xe5f1;</i>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="请输入登录密码" class="filed-input">
+                                </div>
+                            </div>
+                            <div class="fm-filed4" id="fm4">
+                                <div>
+                                    <label class="icon-filed">
+                                        <i class="iconfont">&#xe65a;</i>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="请输入验证码" class="filed-input">
+                                </div>
+                                <div class="send-btn">
+                                    <a href="#">获取验证码</a>
+                                </div>
+                            </div>
+                            <div class="fm-btn">
+                                <button>登录</button>
+                            </div>
+                            <div class="login-way login-blocks">
+                                <a href="#" class="weibo-login"><i class="iconfont">&#xe503;</i>微博登录</a>
+                                <a href="#" class="allay-login"><i class="iconfont">&#xe612;</i>支付宝登录</a>
+                            </div>
+                            <div class="login-blocks login-link">
+                                <a href="javascript:leave(this)" id="none">忘记密码</a>
+                                <a href="javascript:leave(this)" id="none1">忘记用户名</a>
+                                <a href="#">免费注册</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页尾 -->
+    <div id="footer">
+        <div class="tb_footer">
+            <div class="tb_footer_hd">
+                <p>
+                    <span><a href="#">阿里巴巴集团</a></span>
+                    <b>|</b>
+                    <span><a href="#">阿里巴巴国际站</a></span>
+                    <b>|</b>
+                    <span><a href="#">阿里巴巴中国站</a></span>
+                    <b>|</b>
+                    <span><a href="#">全球速卖通</a></span>
+                    <b>|</b>
+                    <span><a href="#">淘宝网</a></span>
+                    <b>|</b>
+                    <span><a href="#">天猫</a></span>
+                    <b>|</b>
+                    <span><a href="#">聚划算</a></span>
+                    <b>|</b>
+                    <span><a href="#">一淘</a></span>
+                    <b>|</b>
+                    <span><a href="#">飞猪</a></span>
+                    <b>|</b>
+                    <span><a href="#">虾米</a></span>
+                    <b>|</b>
+                    <span><a href="#">阿里云计算</a></span>
+                    <b>|</b>
+                    <span><a href="#">云OS</a></span>
+                    <b>|</b>
+                    <span><a href="#">万网</a></span>
+                    <b>|</b>
+                    <span><a href="#">支付宝</a></span>
+                    <b>|</b>
+                    <span><a href="#">来往</a></span>
+                </p>
+            </div>
+            <div class="tb_footer_bd">
+                <p>
+                    <span><a href="#">关于淘宝</a></span>
+                    <span><a href="#">合作伙伴</a></span>
+                    <span><a href="#">营销中心</a></span>
+                    <span><a href="#">廉正举报</a></span>
+                    <span><a href="#">联系客服</a></span>
+                    <span><a href="#">开放平台</a></span>
+                    <span><a href="#">诚征英才</a></span>
+                    <span><a href="#">联系我们</a></span>
+                    <span><a href="#">网站地图</a></span>
+                    <span><a href="#">隐私权政策</a></span>
+                    <span><a href="#">法律声明</a></span>
+                    <span><a href="#">知识产权</a></span>
+                    <b>|</b>
+                    <em>© 2003-现在 Taobao.com 版权所有</em>
+                </p>
+                <p>
+                    <span><a href="#">增值电信业务经营许可证：浙B2-20080224</a></span>
+                    <b>|</b>
+                    <span><a href="#">增值电信业务经营许可证（跨地区）： B2-20150210</a></span>
+                    <b>|</b>
+                    <span><a href="#">浙网文（2019）1033-086号</a></span>
+                    <b>|</b>
+                    <span class="">浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</span>
+                </p>
+                <p>
+                    <span>互联网药品信息服务资格证书（浙）-经营性-2018-0010</span>
+                    <b>|</b>
+                    <span>短消息类服务接入代码使用证书：号【2016】00154-A01</span>
+                    <b>|</b>
+                    <span>信息网络传播视听许可证：1109364号</span>
+                    <b>|</b>
+                    <span>出版物网络交易平台服务经营备案号：新出发浙备字第002号</span>
+                </p>
+                <p>
+                    <span>
+                        <a href="#">浙公网安备 33010002000078号</a>
+                    </span>
+                    <b>|</b>
+                    <span>广播电视节目制作经营许可证（浙）字第01012号</span>
+                    <b>|</b>
+                    <span>市场名称登记证：工商网市字3301004120号</span>
+                    <b>|</b>
+                    <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00004号</span>
+                </p>
+            </div>
+            <div class="tb_footer_ft">
+                <span>
+                    <a href="#" class="a1"></a>
+                </span>
+                <span>
+                    <a href="#" class="a2"></a>
+                </span>
+                <span>
+                    <a href="#" class="a3"></a>
+                </span>
+                <span>
+                    <a href="#" class="a4"></a>
+                </span>
+                <span>
+                    <a href="#" class="a5"></a>
+                </span>
+                <span>
+                    <a href="#" class="a6"></a>
+                </span>
+                <span>
+                    <a href="#" class="a7"></a>
+                </span>
+                <span>
+                    <a href="#" class="a8"></a>
+                </span>
+                <span>
+                    <a href="#" class="a9"></a>
+                </span>
+                <span>
+                    <a href="#" class="a10"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/T_login.js"></script>

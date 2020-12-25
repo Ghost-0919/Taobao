@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>淘宝网-淘！ 我喜欢</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/Taobao.css">
     <link rel="shortcut icon" href="./favicon.ico">
     <!-- <base target="_blank"> -->
@@ -14,52 +15,108 @@
     <div id="top_nav">
         <div class="fl nav_le">
             <ul>
-                <li>
-                    <span class="mr7">中国大陆</span>
-                    <span class="iconfont">&#xe731;</span>
+                <li class="bg_f" onmouseover="china()" onmouseout="china1()">
+                    <div class="top_china">
+                        <span class="mr7">中国大陆</span>
+                        <span class="iconfont">&#xe731;</span>
+                    </div>
+                    <div class="dispnone" id="chi">
+                        <ul class="li-style">
+                            <li>全球</li>
+                            <li>中国大陆</li>
+                            <li>中国香港</li>
+                            <li>中国台湾</li>
+                            <li>中国澳门</li>
+                            <li>韩国</li>
+                            <li>马来西亚</li>
+                            <li>澳大利亚</li>
+                            <li>新加坡</li>
+                            <li>新西兰</li>
+                            <li>加拿大</li>
+                            <li>美国</li>
+                            <li>日本</li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
-                    <a href="#"><span class="f2 mr7">亲，请登录</span></a>
-                    <a href="#"><span class="mr7">免费注册</span></a>
+                    <a href="public/T_login/T_login.html"><span class="f2 mr7">亲，请登录</span></a>
+                    <a href="public/T_login/T_login.html"><span class="mr7">免费注册</span></a>
                 </li>
                 <li>
-                    <a href="#"><span>手机逛淘宝</span></a>
+                    <a href="public/T_login/T_login.html"><span>手机逛淘宝</span></a>
                 </li>
             </ul>
         </div>
         <div class="fr nav_ri">
             <ul>
+                <li class="bg_f" onmouseover="mytb()" onmouseout="mytb1()">
+                    <div>
+                        <a href="public/T_login/T_login.html" class="mr7"><span>我的淘宝</span></a>
+                        <span class="iconfont nav_arr">&#xe731;</span>
+                    </div>
+                    <div class="dispnone" id="my_tb">
+                        <div class="my_taobao">
+                            <a>已买到的宝贝</a>
+                            <a>我的足迹</a>
+                        </div>
+                    </div>
+                </li>
                 <li>
-                    <a href="#" class="mr7"><span>我的淘宝</span></a>
+                    <a href="public/T_login/T_login.html"><span class="iconfont mr5 c4">&#xf0178;</span></a>
+                    <a href="public/T_login/T_login.html" class="mr7"><span>购物车</span></a>
                     <span class="iconfont nav_arr">&#xe731;</span>
                 </li>
-                <li>
-                    <a href="#"><span class="iconfont mr5 c4">&#xf0178;</span></a>
-                    <a href="#" class="mr7"><span>购物车</span></a>
-                    <span class="iconfont nav_arr">&#xe731;</span>
+                <li class="bg_f" onmouseover="coll()" onmouseout="coll1()">
+                    <div>
+                        <a href="public/T_login/T_login.html" class="mr7"><span class="iconfont mr5">&#xe60e;</span>收藏夹</a>
+                        <span class="iconfont nav_arr">&#xe731;</span>
+                    </div>
+                    <div class="dispnone" id="coll">
+                        <div class="collect">
+                            <a href="#">收藏的宝贝</a>
+                            <a href="#">收藏的店铺</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a href="#" class="mr7"><span class="iconfont mr5">&#xe60e;</span>收藏夹</a>
-                    <span class="iconfont nav_arr">&#xe731;</span>
+                    <a href="public/T_login/T_login.html"><span>商品分类</span></a>
                 </li>
                 <li>
-                    <a href="#"><span>商品分类</span></a>
-                </li>
-                <li>
-                    <a href="#"><span>免费开店</span></a>
+                    <a href="public/T_login/T_login.html"><span>免费开店</span></a>
                 </li>
                 <b class="long">|</b>
-                <li>
-                    <a href="#" class="mr7"><span>千牛卖家中心</span></a>
-                    <span class="iconfont nav_arr">&#xe731;</span>
+                <li class="bg_f" onmouseover="qiann()" onmouseout="qiann1()">
+                    <div>
+                        <a href="public/T_login/T_login.html" class="mr7"><span>千牛卖家中心</span></a>
+                        <span class="iconfont nav_arr">&#xe731;</span>
+                    </div>
+                    <div class="dispnone" id="qiann">
+                        <div class="qianniu">
+                            <a href="#">免费开店</a>
+                            <a href="#">已卖出的宝贝</a>
+                            <a href="#">出售中的宝贝</a>
+                            <a href="#">卖家服务市场</a>
+                            <a href="#">卖家培训中心</a>
+                            <a href="#">体检中心</a>
+                            <a href="#">问商友</a>
+                        </div>
+                    </div>
                 </li>
-                <li>
-                    <a href="#" class="mr7"><span>联系客服</span></a>
-                    <span class="iconfont nav_arr">&#xe731;</span>
+                <li class="bg_f" onmouseover="serv()" onmouseout="serv1()">
+                    <div>
+                        <a href="public/T_login/T_login.html" class="mr7"><span>联系客服</span></a>
+                        <span class="iconfont nav_arr">&#xe731;</span>
+                    </div>
+                    <div class="dispnone" id="service">
+                        <div class="service">
+                            <a href="#">消费者客服</a>
+                            <a href="#">卖家客服</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <span class="iconfont mr5 c4">&#xe644;</span>
-                    <a href="#" class="mr7"><span>网站导航</span></a>
+                    <a href="public/T_login/T_login.html" class="mr7"><span>网站导航</span></a>
                     <span class="iconfont nav_arr">&#xe731;</span>
                 </li>
             </ul>
@@ -209,19 +266,19 @@
                     </div>
                     <div class="search2">
                         <ul class="fl">
-                            <a href="#">新款连衣裙</a>
-                            <a href="#">四件套</a>
-                            <a href="#">潮流T恤</a>
-                            <a href="#">时尚女鞋</a>
-                            <a href="#" class="h">短裤</a>
-                            <a href="#">半身群</a>
-                            <a href="#">男士外套</a>
-                            <a href="#">墙纸</a>
-                            <a href="#">行车记录仪</a>
-                            <a href="#">新款男鞋</a>
-                            <a href="#">耳机</a>
-                            <a href="#">时尚女包</a>
-                            <a href="#">沙发</a>
+                            <a href="public/T_login/T_login.html">新款连衣裙</a>
+                            <a href="public/T_login/T_login.html">四件套</a>
+                            <a href="public/T_login/T_login.html">潮流T恤</a>
+                            <a href="public/T_login/T_login.html">时尚女鞋</a>
+                            <a href="public/T_login/T_login.html" class="h">短裤</a>
+                            <a href="public/T_login/T_login.html">半身群</a>
+                            <a href="public/T_login/T_login.html">男士外套</a>
+                            <a href="public/T_login/T_login.html">墙纸</a>
+                            <a href="public/T_login/T_login.html">行车记录仪</a>
+                            <a href="public/T_login/T_login.html">新款男鞋</a>
+                            <a href="public/T_login/T_login.html">耳机</a>
+                            <a href="public/T_login/T_login.html">时尚女包</a>
+                            <a href="public/T_login/T_login.html">沙发</a>
                         </ul>
                     </div>
                 </div>
@@ -448,7 +505,7 @@
                         <a href="#" class="a2">会员俱乐部</a>
                     </p>
                     <div class="member">
-                        <a href="#" class="login mr7">登录</a>
+                        <a href="public/T_login/T_login.html" class="login mr7">登录</a>
                         <a href="#" class="reg mr7">注册</a>
                         <a href="#" class="reg mr7">开店</a>
                     </div>
@@ -2801,3 +2858,5 @@
 </body>
 
 </html>
+
+<script src="js/Taobao.js"></script>
