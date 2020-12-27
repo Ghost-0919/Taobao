@@ -41,7 +41,7 @@ body {
     padding: 0 6px;
 }
 
-#top_nav .nav_ri li {
+#top_nav .nav_ri>ul>li {
     float: left;
     height: 35px;
     line-height: 35px;
@@ -62,7 +62,7 @@ body {
     color: #6c6c6c;
 }
 
-#top_nav div a:hover {
+#top_nav .ahover a:hover {
     color: #f22e00;
 }
 
@@ -655,7 +655,7 @@ body {
     color: #ff5500;
 }
 
-#sub_tent .one a:hover {
+#sub_tent .one li a:hover {
     text-decoration: underline;
 }
 

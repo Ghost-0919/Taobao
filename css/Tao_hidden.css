@@ -53,6 +53,65 @@
     cursor: pointer;
 }
 
+#top_nav .dispnone .web_nav {
+    width: 1190px;
+    overflow: hidden;
+    position: absolute;
+    right: -6px;
+    left: auto;
+    min-height: 258px;
+    line-height: normal;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+#top_nav .web_nav .web_list {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+
+#top_nav .web_nav .web_list_inner {
+    padding: 5px;
+    border-right: 1px solid #eee;
+    overflow: hidden;
+}
+
+#top_nav .web_nav .web_list_inner h4 {
+    margin: 5px;
+    font-size: 16px;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+#top_nav .web_nav .web_list_inner li {
+    width: 24%;
+    float: left;
+    padding-top: 5px;
+    height: 25px;
+    overflow: hidden;
+}
+
+#top_nav .web_nav .web_list_inner li a {
+    position: relative;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 2px;
+    padding: 0 8px;
+    border-radius: 2px;
+    color: #3c3c3c;
+}
+
+#top_nav .web_nav .web_list_inner .list_4 li {
+    width: 49%;
+}
+
+#top_nav .web_nav .web_list_inner .list_2 li,
+#top_nav .web_nav .web_list_inner .list_3 li {
+    width: 33%;
+}
+
 #top_nav .dispnone .qianniu a:hover {
     background: #f5f5f5;
 }
@@ -73,6 +132,170 @@
     background: #fff;
 }
 
-#top_nav .dispnone li:hover {
+#top_nav .dispnone .li-style li:hover {
     background: #f5f5f5;
+}
+
+#top_nav .web_nav .web_list_inner .list_1 a:hover {
+    background: rgb(255, 85, 0);
+    color: #fff;
+}
+
+#top_nav .web_nav .web_list_inner .list_2 a:hover {
+    background: #9fb838;
+    color: #fff;
+}
+
+#top_nav .web_nav .web_list_inner .list_3 a:hover {
+    background: #d75696;
+    color: #fff;
+}
+
+#top_nav .web_nav .web_list_inner .list_4 a:hover {
+    background: #2e9fdb;
+    color: #fff;
+}
+
+
+/* 主体内容隐藏样式 */
+
+#sub_tent .service_float {
+    position: absolute !important;
+    left: 188px;
+    top: 0;
+    padding: 0 0 0 18px;
+    width: 692px;
+    height: 518px;
+    border: 2px solid #f94a14;
+    box-shadow: 2px 2px 0 #dcdadb;
+    background: #fff;
+    color: #333333;
+    font-size: 12px;
+    z-index: 22;
+    display: none;
+    transform: translateZ(0);
+}
+
+.service_float-item {
+    display: none;
+}
+
+#sub_tent .service_left {
+    padding-top: 10px;
+    width: 415px;
+    height: 490px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 12px;
+    padding-left: 10px;
+    float: left;
+}
+
+.service-panel h5 {
+    position: relative;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    color: #333;
+}
+
+.service-panel p {
+    line-height: 26px;
+    overflow: hidden;
+}
+
+.service-panel p a {
+    color: #666;
+    display: inline-block;
+    margin-right: 12px;
+    white-space: normal;
+}
+
+.service-panel {
+    width: 50%;
+    font-size: 12px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.service-panel.full {
+    width: 100%;
+}
+
+#sub_tent .service_rmb {
+    float: left;
+    width: 253px;
+    border-left: 1px solid #f4f4f4;
+    position: relative;
+    height: 498px;
+    padding-top: 20px;
+}
+
+#sub_tent .service_rmb a {
+    display: block;
+    width: 97px;
+    height: 143px;
+    padding: 10px 0 0 20px;
+    overflow: hidden;
+}
+
+#sub_tent .service_rmb h3 {
+    line-height: 18px;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#sub_tent .service_rmb img {
+    width: 97px;
+    height: 97px;
+    display: block;
+    opacity: 0.9;
+    background: #fff;
+}
+
+#sub_tent .service_rmb .img_warpper {
+    width: 97px;
+    height: 94px;
+    overflow: hidden;
+}
+
+#sub_tent .service_rmb h5 {
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    overflow: hidden;
+    font-weight: 400;
+    color: #999999;
+}
+
+#sub_tent .service-img-item {
+    display: block;
+    width: 80px;
+    height: 90px;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#sub_tent .service-img-item img {
+    height: 60px;
+    width: 60px;
+}
+
+#sub_tent .service-img-item p {
+    color: #666;
+    white-space: normal;
+    overflow: hidden;
+    line-height: 26px;
+}
+
+#sub_tent .service_rmb a:hover span {
+    color: #ff4400;
+    text-decoration: none;
+}
+
+#sub_tent .service_rmb img:hover {
+    opacity: 0.8;
 }

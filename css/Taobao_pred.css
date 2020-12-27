@@ -90,6 +90,21 @@ em {
     display: table;
 }
 
+.img_warpper {
+    background: #4f4f4f;
+}
+
+.bor_topf4 {
+    border-top-color: #f4f4f4 !important;
+}
+
+.a_all {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -124,8 +139,4 @@ em {
     height: 16px;
     background: linear-gradient(to bottom, #fad961, #ff9f00);
     margin-right: 7px;
-}
-
-.bor_topf4 {
-    border-top-color: #f4f4f4 !important;
 }
